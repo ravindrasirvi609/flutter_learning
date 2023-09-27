@@ -4,12 +4,19 @@ void main() {
   runApp(const MyApp());
 }
 
+String fullName(String name) {
+  return '$name';
+}
+
+void logicalFunction(String fullName) {}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(fullName(' simplified  render'));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
