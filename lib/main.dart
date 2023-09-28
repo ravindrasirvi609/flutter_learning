@@ -10,12 +10,21 @@ String fullName(String name) {
 
 void logicalFunction(String fullName) {}
 
+void test() {
+  final name = 'test';
+  if (name == 'test'){ print("test is  not a function"); }
+  else{
+  print("test is a function");
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
     print(fullName(' simplified  render'));
     return MaterialApp(
       title: 'Flutter Demo',
