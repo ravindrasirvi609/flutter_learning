@@ -4,12 +4,28 @@ void main() {
   runApp(const MyApp());
 }
 
+String fullName(String name) {
+  return '$name';
+}
+
+void logicalFunction(String fullName) {}
+
+void test() {
+  final name = 'test';
+  if (name == 'test'){ print("test is  not a function"); }
+  else{
+  print("test is a function");
+  }
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
+    print(fullName(' simplified  render'));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -28,7 +44,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
